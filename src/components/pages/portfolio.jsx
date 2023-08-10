@@ -32,21 +32,22 @@ export default function Portfolio() {
     return (
         <div>
             <h1>Portfolio Page</h1>
+            <div className="test">
             {projects.map(project => (
-            <div class="card">
-                <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src={project.img} alt="Placeholder image" />
+            <div className="card is-one-third add-margin">
+                <div className="card-image">
+                    <figure className="image">
+                        <img src={project.img} alt="Placeholder image" className="cat"/>
                     </figure>
                 </div>
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p class="title is-4">{project.name}</p>
+                <div className="card-content">
+                    <div className="media">
+                        <div className="media-content">
+                            <p className="title is-4">{project.name}</p>
                         </div>
                     </div>
 
-                    <div class="content">
+                    <div className="content">
                         {project.desc} 
                         <br />
                         <a href={project.repo}>GitHub Repository</a> <a href={project.deployment}>Heroku Deployment</a>
@@ -54,8 +55,9 @@ export default function Portfolio() {
                     </div>
                 </div>
             </div>
-
+            
             ))}
+            </div>
         </div>
     )
 }
