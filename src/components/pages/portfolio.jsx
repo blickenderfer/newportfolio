@@ -1,4 +1,7 @@
 import example from '../../assets/example.jpg'
+import kk from '../../assets/images/kk.png'
+import blog from '../../assets/images/mrnibbles.png'
+import weather from '../../assets/images/weatherappp.png'
 
 export default function Portfolio() {
     const projects = [
@@ -7,21 +10,21 @@ export default function Portfolio() {
             desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione minima asperiores voluptate aut eum hic. Natus possimus nesciunt voluptatem.`,
             deployment: `https://krypt-keeper-117e4612a77a.herokuapp.com/`,
             repo: `https://github.com/Pandax19/krypt-keeper`,
-            img: example
+            img: kk
         },
         {
-            name: `Krypt Keeper`,
+            name: `Tech Blog`,
             desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione minima asperiores voluptate aut eum hic. Natus possimus nesciunt voluptatem.`,
             deployment: `https://krypt-keeper-117e4612a77a.herokuapp.com/`,
             repo: `https://github.com/Pandax19/krypt-keeper`,
-            img: example
+            img: blog
         },
         {
-            name: `Krypt Keeper`,
+            name: `Weather App`,
             desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione minima asperiores voluptate aut eum hic. Natus possimus nesciunt voluptatem.`,
             deployment: `https://krypt-keeper-117e4612a77a.herokuapp.com/`,
             repo: `https://github.com/Pandax19/krypt-keeper`,
-            img: example
+            img: weather
         },
 
     ]
@@ -30,13 +33,13 @@ export default function Portfolio() {
 
 
     return (
-        <div>
+        <>
             <h1>Portfolio Page</h1>
             <div className="test">
-            {projects.map(project => (
-            <div className="card is-one-third add-margin">
+            {projects.map((project, i) => (
+            <section id={"proj-"+i} className="add-margin card my-card" key={i}>
                 <div className="card-image">
-                    <figure className="image">
+                    <figure className="project-image">
                         <img src={project.img} alt="Placeholder image" className="cat"/>
                     </figure>
                 </div>
@@ -54,10 +57,10 @@ export default function Portfolio() {
                         <br />
                     </div>
                 </div>
-            </div>
+            </section>
             
             ))}
             </div>
-        </div>
+        </>
     )
 }

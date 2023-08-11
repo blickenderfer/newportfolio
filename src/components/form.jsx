@@ -26,7 +26,7 @@ export default function Form() {
     };
     return (
         <div className='container text-center'>
-            <form className="form" onSubmit={handleFormSubmit}>
+            <form className="form my-form" onSubmit={handleFormSubmit}>
                 <input
                     value={firstName}
                     name='firstName'
