@@ -1,3 +1,6 @@
+import logo from '../assets/images/logo.png'
+import './hamburger'
+
 export default function Header({ handlePageChange }) {
     return (
         <header>
@@ -9,14 +12,17 @@ export default function Header({ handlePageChange }) {
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+                        <img src={logo} className="logo" />
                     </a>
 
-                    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
+
+                    <div class="navbar-menu" id="navMenu">
+                    </div>
                 </div>
 
                 <div id="navbarBasicExample" className="navbar-menu">

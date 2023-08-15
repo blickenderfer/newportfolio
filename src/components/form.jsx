@@ -18,7 +18,7 @@ export default function Form() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        alert(`Thank you for your message, ${firstName}!`);
+        alert(`Thank you for your message!`);
         setFirstName('');
         setLastName('');
         setEmail('')

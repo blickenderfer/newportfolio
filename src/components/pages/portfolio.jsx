@@ -7,23 +7,23 @@ export default function Portfolio() {
     const projects = [
         {
             name: `Krypt Keeper`,
-            desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione minima asperiores voluptate aut eum hic. Natus possimus nesciunt voluptatem.`,
+            desc: `Use a zip code to search for spooky events in your area.`,
             deployment: `https://krypt-keeper-117e4612a77a.herokuapp.com/`,
             repo: `https://github.com/Pandax19/krypt-keeper`,
             img: kk
         },
         {
             name: `Tech Blog`,
-            desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione minima asperiores voluptate aut eum hic. Natus possimus nesciunt voluptatem.`,
-            deployment: `https://krypt-keeper-117e4612a77a.herokuapp.com/`,
-            repo: `https://github.com/Pandax19/krypt-keeper`,
+            desc: `Create blog posts that other users can react to.`,
+            deployment: `https://blogofdoom-3134a54443ce.herokuapp.com/`,
+            repo: `https://github.com/blickenderfer/techblog`,
             img: blog
         },
         {
             name: `Weather App`,
-            desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione minima asperiores voluptate aut eum hic. Natus possimus nesciunt voluptatem.`,
+            desc: `Track the forecast in any city in the world.`,
             deployment: `https://krypt-keeper-117e4612a77a.herokuapp.com/`,
-            repo: `https://github.com/Pandax19/krypt-keeper`,
+            repo: `https://blickenderfer.github.io/weatherapp/`,
             img: weather
         },
 
