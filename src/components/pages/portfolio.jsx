@@ -2,7 +2,7 @@ import example from '../../assets/example.jpg'
 import kk from '../../assets/images/kk.png'
 import blog from '../../assets/images/mrnibbles.png'
 import weather from '../../assets/images/weatherappp.png'
-
+import hive from '../../assets/images/hivess.jpg'
 export default function Portfolio() {
     const projects = [
         {
@@ -25,6 +25,13 @@ export default function Portfolio() {
             deployment: `https://krypt-keeper-117e4612a77a.herokuapp.com/`,
             repo: `https://blickenderfer.github.io/weatherapp/`,
             img: weather
+        },
+        {
+            name: `Hive`,
+            desc: `A social media site for gamers.`,
+            deployment: `https://hive1-03d1291901c2.herokuapp.com/`,
+            repo: `https://github.com/blickenderfer/hive`,
+            img: hive
         },
 
     ]
